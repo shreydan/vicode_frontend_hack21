@@ -1,0 +1,23 @@
+#view-3d {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#view-text {
+    font-size: 2vw;
+    color: rgb(0, 0, 0);
+    margin-bottom: 3%;
+}
+
+#view-area {
+    width: 80%;
+    height: 80vh;
+}
+#view-area * {
+    border: 5px solid black;
+    outline: none;
+}
