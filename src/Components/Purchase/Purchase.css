@@ -1,0 +1,37 @@
+#purchase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 70vh;
+    background-color: #51B6EE;
+    color: white;
+}
+#purchase #purchase-text {
+    font-size: 4vw;
+}
+
+#purchase #purchase-button {
+    padding: 1%;
+    width: 10vw;
+    background-color: #5BBFF8;
+    border: 3px solid white;
+    border-radius: 50px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+#purchase-button:hover {
+    background-color: #000000;
+    transition-duration: 0.2s;
+}
+#purchase img {
+    width: 50vw;
+    aspect-ratio: 1;
+    margin-top: -10%;
+    margin-bottom: -20%;
+}

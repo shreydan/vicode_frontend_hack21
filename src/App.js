@@ -6,6 +6,7 @@ import Feature from './Components/Features-Desktop/Feature'
 import OS from './Components/OS-feature/OS'
 import Colors from './Components/Colors-Desktop/Colors'
 import WatchExperience from './Components/Watch3D/WatchExperience'
+import Purchase from './Components/Purchase/Purchase';
 
 import feature1 from './assets/SETU.png'
 import feature2 from './assets/nfc.png'
@@ -87,6 +88,8 @@ function App() {
       <Colors />
       <TitleBar color='#FCD5F8' text='3D Experience' />
       <WatchExperience />
+      <TitleBar color='#43A6DE' text='Purchase' />
+      <Purchase />
     </div>
   );
 }
