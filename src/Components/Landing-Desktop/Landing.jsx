@@ -21,7 +21,7 @@ function Landing() {
 
             <div className="content">
                 <div id="text">
-                    <div id="title">Kawatch <br/> S1</div>
+                    <div id="title">KaWatch <br/> S1</div>
                     <div id="tagline">A watch that assists you to be your best everywhere.</div>
 
                     <div id="button-3d">Experience in 3D</div>
