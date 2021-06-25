@@ -1,0 +1,26 @@
+#feature {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+}
+#feature img {
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+
+#feature #content {
+    margin: 0% 1%;
+    width: 50%;
+    margin-top: 10%;
+}
+#feature #content #feature-title {
+    font-size: 3vw;
+    font-weight: 600;
+}
+#feature #content #feature-description {
+    font-size: 2vw;
+    font-weight: normal;
+    margin-top: 10%;
+}
