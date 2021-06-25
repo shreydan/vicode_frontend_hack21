@@ -75,7 +75,11 @@ function App() {
     <div className="App">
       <Landing />
       <TitleBar color='#cab5eb' text='Features' />
-      
+      {
+        features.map((feature) => (
+          <Feature {...feature} key={feature.id} />
+        ))
+      }
     </div>
   );
 }
