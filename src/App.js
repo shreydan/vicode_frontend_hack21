@@ -3,6 +3,7 @@ import './App.css'
 import Landing from './Components/Landing-Desktop/Landing'
 import TitleBar from './Components/TitleBar/TitleBar';
 import Feature from './Components/Features-Desktop/Feature'
+import OS from './Components/OS-feature/OS'
 
 import feature1 from './assets/SETU.png'
 import feature2 from './assets/nfc.png'
@@ -13,7 +14,7 @@ import feature5 from './assets/chakra.png'
 
 function App() {
 
-  const [features, setFeatures] = useState([
+  const [features] = useState([
     {
       id: 1,
       title: 'Aarogya Setu Integration',
@@ -80,6 +81,7 @@ function App() {
           <Feature {...feature} key={feature.id} />
         ))
       }
+      <OS />
     </div>
   );
 }
