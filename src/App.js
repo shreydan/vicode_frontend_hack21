@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import {useMediaQuery} from 'react-responsive'
+
 import './App.css'
 import Landing from './Components/Landing-Desktop/Landing'
 import TitleBar from './Components/TitleBar/TitleBar';
@@ -73,26 +75,40 @@ function App() {
   ])
 
 
-
+const Desktop = ({children}) => {
+  const isDesktop = useMediaQuery({orientation: 'landscape'})
+  return isDesktop ? children : null
+}
+const Mobile = ({children}) => {
+  const isMobile = useMediaQuery({orientation: 'portrait'})
+  return isMobile ? children : null
+}
 
 
 
   return (
     <div className="App">
-      <Landing />
-      <TitleBar color='#cab5eb' text='Features' />
-      {
-        features.map((feature) => (
-          <Feature {...feature} key={feature.id} />
-        ))
-      }
-      <OS />
-      <Colors />
-      <TitleBar color='#FCD5F8' text='3D Experience' />
-      <WatchExperience />
-      <TitleBar color='#43A6DE' text='Purchase' />
-      <Purchase />
-      <Footer />
+        <Desktop>
+          <Landing />
+          <TitleBar color='#cab5eb' text='Features' />
+          {
+            features.map((feature) => (
+              <Feature {...feature} key={feature.id} />
+            ))
+          }
+          <OS />
+          <Colors />
+          <TitleBar color='#FCD5F8' text='3D Experience' />
+          <WatchExperience />
+          <TitleBar color='#43A6DE' text='Purchase' />
+          <Purchase />
+          <Footer />
+      </Desktop>
+
+      <Mobile>
+        
+      </Mobile>
+
     </div>
   );
 }
