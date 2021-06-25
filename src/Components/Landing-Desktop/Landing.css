@@ -1,0 +1,109 @@
+#landing {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    background: url('../../assets/blur.png') #fff;
+    background-size: cover;
+    background-position: center center;
+    flex-direction: column;
+    /*overflow: hidden;*/
+}
+
+.nav {
+    display: flex;
+    width: 90%;
+    margin-top: 2%; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav #logo {
+    max-height: 10vw;
+    aspect-ratio: 1;
+}
+
+.nav .menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.657);
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+
+    padding: 1.5% 1%;
+}
+.menu-bar div {
+    color: black;
+    padding: 2%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    font-size: 1.15vw;
+}
+.menu-bar div:hover {
+    color: white;
+    background-color: #EECBCB;
+    transition-duration: 0.2s;
+}
+
+.menu-bar div:first-child {
+    color: white;
+    font-weight: 600;
+    background-color: #EECBCB;
+    transition-duration: 0.2s;
+}
+
+
+.content {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    color: white;
+    flex: 1;
+}
+.content img {
+    height: 30vw;
+    aspect-ratio: 1;
+}
+
+#text #title {
+    font-size: 5vw;
+    font-weight: 700;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+#text #tagline {
+    font-size: 2vw;
+    width: 50%;
+    word-wrap: normal;
+    margin-top: 2%;
+}
+
+
+#button-3d {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+    border-radius: 50px;
+    border: 5px solid rgba( 255, 255, 255, 0.18 );
+    padding: 2% 1%;
+    width: 30%;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 2%;
+    transition-duration: 0.1s;
+
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+#button-3d:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 32px 0 rgba(22, 27, 104, 0.37);
+    transition-duration: 0.3s;
+}
