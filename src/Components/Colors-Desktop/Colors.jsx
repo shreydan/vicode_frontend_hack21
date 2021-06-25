@@ -9,8 +9,18 @@ import white from '../../assets/colors/white-band.png'
 
 function Colors() {
     return (
-        <div>
-            
+        <div id="colors">
+            <div id="colors-content">
+                <div id="colors-title">A colour for every occasion.</div>
+                <div id="colors-tagline">Bands made from high quality breathable materials and vibrant colours to show off all the time.</div>
+            </div>
+            <div className="bands">
+                <img src={white} alt="white" />
+                <img src={red} alt="red" />
+                <img src={green} alt="green" />
+                <img src={blue} alt="blue" />
+                <img src={black} alt="black" />
+            </div>
         </div>
     )
 }
