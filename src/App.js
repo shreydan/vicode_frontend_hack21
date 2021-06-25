@@ -8,6 +8,8 @@ import Colors from './Components/Colors-Desktop/Colors'
 import WatchExperience from './Components/Watch3D/WatchExperience'
 import Purchase from './Components/Purchase/Purchase';
 
+import Footer from './Components/Footer/Footer';
+
 import feature1 from './assets/SETU.png'
 import feature2 from './assets/nfc.png'
 import feature3 from './assets/f2.png'
@@ -90,6 +92,7 @@ function App() {
       <WatchExperience />
       <TitleBar color='#43A6DE' text='Purchase' />
       <Purchase />
+      <Footer />
     </div>
   );
 }
