@@ -4,6 +4,7 @@ import Landing from './Components/Landing-Desktop/Landing'
 import TitleBar from './Components/TitleBar/TitleBar';
 import Feature from './Components/Features-Desktop/Feature'
 import OS from './Components/OS-feature/OS'
+import Colors from './Components/Colors-Desktop/Colors'
 
 import feature1 from './assets/SETU.png'
 import feature2 from './assets/nfc.png'
@@ -82,6 +83,7 @@ function App() {
         ))
       }
       <OS />
+      <Colors />
     </div>
   );
 }
