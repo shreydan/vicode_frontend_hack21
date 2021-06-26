@@ -22,8 +22,13 @@ import feature5 from './assets/chakra.png'
 
 
 
+
 // MOBILE
 import MLanding from './Components/Landing-Mobile/MLanding'
+import FeatureMobile from './Components/Feature-mobile/Feature_mobile'
+import feature1_mobile from './assets/mobile/setu.png'
+import feature2_mobile from './assets/mobile/nfc.png'
+import feature3_mobile from './assets/mobile/vitals.png'
 
 
 function App() {
@@ -81,7 +86,49 @@ function App() {
     },
   ])
 
-
+  const [featuresMobile] = useState([
+    {
+      id: 1,
+      title: 'Aarogya Setu Integration',
+      description: 'get quick contact tracing notifications directly on your watch and get reminders and directions for your vaccine appointments',
+      image: feature1_mobile,
+      color: 'white',
+      bg: '#FF6262'
+    }, 
+    {
+      id: 2,
+      title: 'NFC payments with UPI and Crypto',
+      description: 'Pay using UPI anywhere quickly and pay using your selected cryptocurrency connected to your digital wallet for seamless transactions.',
+      image: feature2_mobile,
+      color: 'white',
+      bg: '#62A1FF'
+    },
+    {
+      id: 3,
+      title: 'Active vital measurements with AI',
+      description: 'Thanks to its precise sensors which use specalised AI algorithms to keep all your Health Vitals in check.',
+      image: feature3_mobile,
+      color: 'black',
+      bg: '#62FF8E'
+    },
+    // {
+    //   id: 4,
+    //   title: 'Hi-Tech precision with advanced sensors',
+    //   description: 'This is the first watch ever to measure temperature using IR and an oximeter to accurately measure your vitals round the clock.',
+    //   image: feature4,
+    //   color: 'white',
+    //   bg: '#0F0F0F'
+    // },
+    // {
+    //   id: 5,
+    //   title: 'Digital Chakra to interact effortlessly',
+    //   description: 'Kawatch emulates the mechanics of a real time-piece digitally to make new users feel home.',
+    //   image: feature5,
+    //   color: 'white',
+    //   bg: '#EE6E26'
+    // },
+  ])
+  
 const Desktop = ({children}) => {
   const isDesktop = useMediaQuery({orientation: 'landscape'})
   return isDesktop ? children : null
@@ -114,6 +161,7 @@ const Mobile = ({children}) => {
 
       <Mobile>
         <MLanding />
+        <FeatureMobile {...featuresMobile[0]}/>
       </Mobile>
 
     </div>

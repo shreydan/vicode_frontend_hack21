@@ -1,0 +1,28 @@
+#feature-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+#feature-mobile img {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+
+#feature-mobile #features-content-mobile {
+    text-align: center;
+    margin: 0% 2%;
+    margin-top: 10%;
+}
+#feature-mobile #features-content-mobile #feature-title-mobile {
+    font-size: 10vw;
+    font-weight: 600;
+}
+#feature-mobile #features-content-mobile #feature-description-mobile {
+    font-size: 6vw;
+    font-weight: normal;
+    margin-top: 10%;
+}
