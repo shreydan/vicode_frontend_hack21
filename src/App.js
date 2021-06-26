@@ -32,9 +32,12 @@ import FeatureMobile from './Components/Feature-mobile/Feature_mobile'
 import feature1_mobile from './assets/mobile/setu.png'
 import feature2_mobile from './assets/mobile/nfc.png'
 import feature3_mobile from './assets/mobile/vitals.png'
+import ColorsMobile from './Components/Colors-Mobile/ColorsMobile';
 
 
 function App() {
+
+  const [language, setLanguage] = useState('eng')
 
   const [features] = useState([
     {
@@ -178,6 +181,7 @@ const Mobile = ({children}) => {
           <FeatureMobile {...featuresMobile[4]} left/>
         </Carousel>
         <OS column={true} />
+        <ColorsMobile />
         <TitleBar color='#FCD5F8' text='3D Experience' name="to-experience" />
         <WatchExperience />
         <TitleBar color='#43A6DE' text='Purchase'  name="to-purchase"/>

@@ -1,0 +1,26 @@
+#colors-mobile {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5% 0;
+
+}
+#colors-mobile-content #colors-title-mobile {
+    padding: 3% 0;
+    font-size: 4vh;
+    font-weight: 600;
+}
+#colors-mobile-content #colors-tag-mobile {
+    padding: 3% 0;
+    font-size: 2vh;
+    font-weight: 500;
+}
+#colors-mobile img {
+    height: 60vw;
+    width: auto;
+    margin-bottom: 5%;
+}
