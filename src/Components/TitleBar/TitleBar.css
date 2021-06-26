@@ -1,4 +1,4 @@
-#titlebar {
+.titlebar {
     margin: 0;
     width: 100%;
     font-size: 3vw;
@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-between;
 }
-#titlebar #text {
+.titlebar #text {
     padding-left: 1%;
 }
 

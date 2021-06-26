@@ -7,8 +7,8 @@ function Footer() {
     return (
         <div id="footer">
             <div className="icons">
-                <FontAwesomeIcon icon={faInstagram} id="icon"/>
-                <FontAwesomeIcon icon={faTwitter} id="icon"/>
+                <a href="https://instagram.com/mxsheexd" target='_blank' rel='noreferrer'><FontAwesomeIcon icon={faInstagram} id="icon"/></a>
+                <a href="https://twitter.com/shreydan" target='_blank' rel='noreferrer'><FontAwesomeIcon icon={faTwitter} id="icon"/></a>
             </div>
             <div id="company-name">
                 KaWatch Inc.

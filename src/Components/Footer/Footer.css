@@ -8,6 +8,11 @@
     font-size: 2vw;
     font-weight: 600;
 }
+#footer * {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
 .icons {
     display: flex;
 }

@@ -13,8 +13,10 @@
 }
 
 #purchase #purchase-button {
+    text-decoration: none;
     padding: 1%;
-    width: 10vw;
+    width: 15vw;
+    color: white;
     background-color: #5BBFF8;
     border: 3px solid white;
     border-radius: 50px;
@@ -26,12 +28,9 @@
     cursor: pointer;
 }
 #purchase-button:hover {
-    background-color: #000000;
     transition-duration: 0.2s;
 }
 #purchase img {
     width: 50vw;
-    aspect-ratio: 1;
-    margin-top: -10%;
-    margin-bottom: -20%;
+    margin-bottom: -10%;
 }

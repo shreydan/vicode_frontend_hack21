@@ -38,7 +38,7 @@
 
     padding: 1.5% 1%;
 }
-.menu-bar div {
+.menu-bar * {
     color: black;
     padding: 2%;
     border-radius: 10px;
@@ -46,15 +46,8 @@
     transition-duration: 0.2s;
     font-size: 1.15vw;
 }
-.menu-bar div:hover {
+.menu-bar *:hover {
     color: white;
-    background-color: #EECBCB;
-    transition-duration: 0.2s;
-}
-
-.menu-bar div:first-child {
-    color: white;
-    font-weight: 600;
     background-color: #EECBCB;
     transition-duration: 0.2s;
 }

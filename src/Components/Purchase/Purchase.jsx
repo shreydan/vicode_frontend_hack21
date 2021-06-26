@@ -9,10 +9,10 @@ function Purchase() {
     return (
         <div id="purchase">
             <div id="purchase-text">We know you want one now.</div>
-            <div id="purchase-button">
-                <div>Buy Now</div>
+            <a id="purchase-button" href="https://amazon.in" target='_blank' rel='noreferrer'>
+                <div>Buy Now on Amazon</div>
                 <FontAwesomeIcon icon={faArrowRight} id="icon"/>
-            </div>
+            </a>
             <img src={purchase_image} alt="purchase" />
         </div>
     )

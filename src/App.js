@@ -90,7 +90,7 @@ const Mobile = ({children}) => {
     <div className="App">
         <Desktop>
           <Landing />
-          <TitleBar color='#cab5eb' text='Features' />
+          <TitleBar color='#cab5eb' text='Features' name="to-features"/>
           {
             features.map((feature) => (
               <Feature {...feature} key={feature.id} />
@@ -98,9 +98,9 @@ const Mobile = ({children}) => {
           }
           <OS />
           <Colors />
-          <TitleBar color='#FCD5F8' text='3D Experience' />
+          <TitleBar color='#FCD5F8' text='3D Experience' name="to-experience" />
           <WatchExperience />
-          <TitleBar color='#43A6DE' text='Purchase' />
+          <TitleBar color='#43A6DE' text='Purchase'  name="to-purchase"/>
           <Purchase />
           <Footer />
       </Desktop>

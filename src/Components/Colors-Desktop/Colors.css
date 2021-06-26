@@ -24,7 +24,7 @@
     height: 80%;
     display: flex;
     position: relative;
-    right: 10%;
+    right: 5%;
     width: 60%;
     top: 40%;
     transform: translateY(-50%);
@@ -32,9 +32,8 @@
 }
 .bands img {
     height: 35vw;
-    aspect-ratio: 1;
+    margin: 0 -6vw;
     position: relative;
-    margin: 0 -13vw;
     transform: scale(0.95);
     transition: z-index 0.5s step-start, transform 0.3s linear;
 }
