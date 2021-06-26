@@ -1,4 +1,6 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import './OS.css'
 
 import watchface from '../../assets/watchface.png'
@@ -8,14 +10,18 @@ import walk from '../../assets/walk.png'
 function Card({image, text}) {
     return (
         <div id="card">
-            <img src={image} alt="" />
-            <div id="os-text">{text}</div>
+            <img src={image} alt="" data-aos="fade-up"/>
+            <div id="os-text" data-aos="fade">{text}</div>
         </div>
     )
 }
 
 
 function OS({column, hindiToggle}) {
+
+    useEffect(() => {
+        AOS.init();
+      }, []);
 
     const direction = column ? {flexDirection: 'column'} : {flexDirection: 'row'};
 
@@ -39,8 +45,8 @@ function OS({column, hindiToggle}) {
 
 
     return (
-        <div id="banner">
-            <div id="os-title">{['A Dynamic OS to Live For', 'जीवन को आसान बनाने के लिए एक गतिशील ओएस'][hindiToggle]}</div>
+        <div id="banner" >
+            <div id="os-title" data-aos="fade">{['A Dynamic OS to Live For', 'जीवन को आसान बनाने के लिए एक गतिशील ओएस'][hindiToggle]}</div>
             <div className="cards" style={direction}>
                 {
                     cards.map((card) => (
