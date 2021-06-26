@@ -1,10 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import './Landing.css'
 import {Link} from 'react-scroll'
 import logo from '../../assets/kw.png'
 import landingimage from '../../assets/kawatch--watchface.png'
 
 function Landing({hindiToggle}) {
+
+    useEffect(() => {
+        AOS.init();
+      }, []);
 
     const Specifications = ['Specifications','विवरण'][hindiToggle]
     const Features = ['Features','विशेषताएं'][hindiToggle]
@@ -25,14 +31,14 @@ function Landing({hindiToggle}) {
 
             </div>
 
-            <div className="content">
+            <div className="content" data-aos="fade-right">
                 <div id="text">
                     <div id="title">KaWatch <br/> S1</div>
                     <div id="tagline">{TagLine}</div>
 
                     <Link to='to-experience' smooth={true}><div id="button-3d">{Experience}</div></Link>
                 </div>
-                <img src={landingimage} alt="" />
+                <img src={landingimage} alt="" data-aos="fade-left"/>
             </div>
         </div>
     )
