@@ -8,12 +8,16 @@ import red from '../../assets/colors/red-band.png'
 import white from '../../assets/colors/white-band.png'
 
 
-function ColorsMobile() {
+function ColorsMobile({hindiToggle}) {
+
+    const Title = ['A colour for every occasion.','हर अवसर के लिए एक रंग'][hindiToggle]
+    const TagLine = ['Bands made from high quality breathable materials and vibrant colours to show off all the time.','हर समय दिखाने के लिए उच्च गुणवत्ता वाली सांस लेने वाली सामग्री और जीवंत रंगों से बने बैंड।'][hindiToggle]
+
     return (
         <div id="colors-mobile">
             <div id="colors-mobile-content">
-                <div id="colors-title-mobile">A colour for every occasion.</div>
-                <div id="colors-tag-mobile">Bands made from high quality breathable materials and vibrant colours to show off all the time.</div>
+                <div id="colors-title-mobile">{Title}</div>
+                <div id="colors-tag-mobile">{TagLine}</div>
             </div>
             <Carousel   emulateTouch 
                         showArrows={false} 

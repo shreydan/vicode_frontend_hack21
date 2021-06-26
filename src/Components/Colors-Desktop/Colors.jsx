@@ -7,12 +7,16 @@ import green from '../../assets/colors/green-band.png'
 import red from '../../assets/colors/red-band.png'
 import white from '../../assets/colors/white-band.png'
 
-function Colors() {
+function Colors({hindiToggle}) {
+
+    const Title = ['A colour for every occasion.','हर अवसर के लिए एक रंग'][hindiToggle]
+    const TagLine = ['Bands made from high quality breathable materials and vibrant colours to show off all the time.','हर समय दिखाने के लिए उच्च गुणवत्ता वाली सांस लेने वाली सामग्री और जीवंत रंगों से बने बैंड।'][hindiToggle]
+
     return (
         <div id="colors">
             <div id="colors-content">
-                <div id="colors-title">A colour for every occasion.</div>
-                <div id="colors-tagline">Bands made from high quality breathable materials and vibrant colours to show off all the time.</div>
+                <div id="colors-title">{Title}</div>
+                <div id="colors-tagline">{TagLine}</div>
             </div>
             <div className="bands">
                 <img src={white} alt="white" />

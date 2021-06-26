@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import ReactDOM from 'react-dom';
 import {useMediaQuery} from 'react-responsive'
 import {Carousel} from 'react-responsive-carousel'
-import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './App.css'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+import Language from './Components/Language/Language';
 
 
 // DESKTOP
@@ -37,13 +37,19 @@ import ColorsMobile from './Components/Colors-Mobile/ColorsMobile';
 
 function App() {
 
-  const [language, setLanguage] = useState('eng')
+  const [hindiToggle, setHindi] = useState(0)
+
+  const changeLanguageToHindi = () => {
+    console.log('yay')
+    if(hindiToggle === 1) setHindi(0)
+    else setHindi(1)
+  }
 
   const [features] = useState([
     {
       id: 1,
-      title: 'Aarogya Setu Integration',
-      description: 'get quick contact tracing notifications directly on your watch and get reminders and directions for your vaccine appointments',
+      title: ['Aarogya Setu Integration','आरोग्य सेतु एकीकरण'],
+      description: ['get quick contact tracing notifications directly on your watch and get reminders and directions for your vaccine appointments','सीधे अपनी घड़ी पर त्वरित संपर्क अनुरेखण सूचनाएं प्राप्त करें और अपनी टीका नियुक्तियों के लिए अनुस्मारक और निर्देश प्राप्त करें'],
       flex: 'row',
       image: feature1,
       color: 'white',
@@ -52,8 +58,8 @@ function App() {
     }, 
     {
       id: 2,
-      title: 'NFC payments with UPI and Crypto',
-      description: 'Pay using UPI anywhere quickly and pay using your selected cryptocurrency connected to your digital wallet for seamless transactions.',
+      title: ['NFC payments with UPI and Crypto','यूपीआई और क्रिप्टो से भुगतान इन.एफ.की द्वारा'],
+      description: ['Pay using UPI anywhere quickly and pay using your selected cryptocurrency connected to your digital wallet for seamless transactions.','यूपीआई का उपयोग करके कहीं भी जल्दी से भुगतान करें और निर्बाध लेनदेन के लिए अपने डिजिटल वॉलेट से जुड़ी अपनी चयनित क्रिप्टोकरेंसी का उपयोग करके भुगतान करें'],
       flex: 'row-reverse',
       image: feature2,
       color: 'white',
@@ -62,8 +68,8 @@ function App() {
     },
     {
       id: 3,
-      title: 'Active vital measurements with AI',
-      description: 'Thanks to its precise sensors which use specalised AI algorithms to keep all your Health Vitals in check.',
+      title: ['Active vital measurements with AI','ए.आई. के साथ सक्रिय महत्वपूर्ण माप'],
+      description: ['Thanks to its precise sensors which use specalised AI algorithms to keep all your Health Vitals in check.','इसके सटीक सेंसर के लिए धन्यवाद जो आपके सभी स्वास्थ्य संबंधी महत्वपूर्णताओं को नियंत्रण में रखने के लिए विशिष्ट एआई एल्गोरिदम का उपयोग करते हैं।'],
       flex: 'row',
       image: feature3,
       color: 'black',
@@ -72,8 +78,8 @@ function App() {
     },
     {
       id: 4,
-      title: 'Hi-Tech precision with advanced sensors',
-      description: 'This is the first watch ever to measure temperature using IR and an oximeter to accurately measure your vitals round the clock.',
+      title: ['Hi-Tech precision with advanced sensors','उन्नत सेंसर के साथ हाई-टेक परिशुद्धता'],
+      description: ['This is the first watch ever to measure temperature using IR and an oximeter to accurately measure your vitals round the clock.','यह IR और एक ऑक्सीमीटर का उपयोग करके तापमान मापने वाली अब तक की पहली घड़ी है, जो आपके जीवन के हर हिस्से को सटीक रूप से मापती है।'],
       flex: 'row-reverse',
       image: feature4,
       color: 'white',
@@ -82,8 +88,8 @@ function App() {
     },
     {
       id: 5,
-      title: 'Digital Chakra to interact effortlessly',
-      description: 'Kawatch emulates the mechanics of a real time-piece digitally to make new users feel home.',
+      title: ['Digital Chakra to interact effortlessly','डिजिटल चक्र से करें काम आसान'],
+      description: ['Kawatch emulates the mechanics of a real time-piece digitally to make new users feel home.','Kawatch नए उपयोगकर्ताओं को घर जैसा महसूस कराने के लिए वास्तविक समय-टुकड़ा के यांत्रिकी का डिजिटल रूप से अनुकरण करता है'],
       flex: 'row',
       image: feature5,
       color: 'white',
@@ -95,40 +101,40 @@ function App() {
   const [featuresMobile] = useState([
     {
       id: 1,
-      title: 'Aarogya Setu Integration',
-      description: 'get quick contact tracing notifications directly on your watch and get reminders and directions for your vaccine appointments',
+      title: ['Aarogya Setu Integration','आरोग्य सेतु एकीकरण'],
+      description: ['get quick contact tracing notifications directly on your watch and get reminders and directions for your vaccine appointments','सीधे अपनी घड़ी पर त्वरित संपर्क अनुरेखण सूचनाएं प्राप्त करें और अपनी टीका नियुक्तियों के लिए अनुस्मारक और निर्देश प्राप्त करें'],
       image: feature1_mobile,
       color: 'white',
       bg: '#FF6262'
     }, 
     {
       id: 2,
-      title: 'NFC payments with UPI and Crypto',
-      description: 'Pay using UPI anywhere quickly and pay using your selected cryptocurrency connected to your digital wallet for seamless transactions.',
+      title: ['NFC payments with UPI and Crypto','यूपीआई और क्रिप्टो से भुगतान इन.एफ.की द्वारा'],
+      description: ['Pay using UPI anywhere quickly and pay using your selected cryptocurrency connected to your digital wallet for seamless transactions.','यूपीआई का उपयोग करके कहीं भी जल्दी से भुगतान करें और निर्बाध लेनदेन के लिए अपने डिजिटल वॉलेट से जुड़ी अपनी चयनित क्रिप्टोकरेंसी का उपयोग करके भुगतान करें'],
       image: feature2_mobile,
       color: 'white',
       bg: '#62A1FF'
     },
     {
       id: 3,
-      title: 'Active vital measurements with AI',
-      description: 'Thanks to its precise sensors which use specalised AI algorithms to keep all your Health Vitals in check.',
+      title: ['Active vital measurements with AI','ए.आई. के साथ सक्रिय महत्वपूर्ण माप'],
+      description: ['Thanks to its precise sensors which use specalised AI algorithms to keep all your Health Vitals in check.','इसके सटीक सेंसर के लिए धन्यवाद जो आपके सभी स्वास्थ्य संबंधी महत्वपूर्णताओं को नियंत्रण में रखने के लिए विशिष्ट एआई एल्गोरिदम का उपयोग करते हैं।'],
       image: feature3_mobile,
       color: 'black',
       bg: '#62FF8E'
     },
     {
       id: 4,
-      title: 'Hi-Tech precision with advanced sensors',
-      description: 'This is the first watch ever to measure temperature using IR and an oximeter to accurately measure your vitals round the clock.',
+      title: ['Hi-Tech precision with advanced sensors','उन्नत सेंसर के साथ हाई-टेक परिशुद्धता'],
+      description: ['This is the first watch ever to measure temperature using IR and an oximeter to accurately measure your vitals round the clock.','यह IR और एक ऑक्सीमीटर का उपयोग करके तापमान मापने वाली अब तक की पहली घड़ी है, जो आपके जीवन के हर हिस्से को सटीक रूप से मापती है।'],
       image: feature4,
       color: 'white',
       bg: '#0F0F0F'
     },
     {
       id: 5,
-      title: 'Digital Chakra to interact effortlessly',
-      description: 'Kawatch emulates the mechanics of a real time-piece digitally to make new users feel home.',
+      title: ['Digital Chakra to interact effortlessly','डिजिटल चक्र से करें काम आसान'],
+      description: ['Kawatch emulates the mechanics of a real time-piece digitally to make new users feel home.','Kawatch नए उपयोगकर्ताओं को घर जैसा महसूस कराने के लिए वास्तविक समय-टुकड़ा के यांत्रिकी का डिजिटल रूप से अनुकरण करता है'],
       image: feature5,
       color: 'white',
       bg: '#EE6E26'
@@ -149,42 +155,57 @@ const Mobile = ({children}) => {
   return (
     <div className="App">
       <Desktop>
-        <Landing />
-        <TitleBar color='#cab5eb' text='Features' name="to-features"/>
+        <Language hindiToggle={hindiToggle} changeLanguageToHindi={changeLanguageToHindi} />
+        <Landing hindiToggle={hindiToggle} />
+        <TitleBar color='#cab5eb' text={['Features','विशेषताएं'][hindiToggle]} name="to-features"/>
         {
           features.map((feature) => (
-            <Feature {...feature} key={feature.id} />
+            <Feature {...feature} 
+                    title={feature.title[hindiToggle]} 
+                    description={feature.description[hindiToggle]}
+                    key={feature.id} />
           ))
         }
-        <OS />
-        <Colors />
-        <TitleBar color='#FCD5F8' text='3D Experience' name="to-experience" />
+        <OS  hindiToggle={hindiToggle}/>
+        <Colors hindiToggle={hindiToggle} />
+        <TitleBar color='#FCD5F8' text={['3D Experience','3D में अनुभव'][hindiToggle]} name="to-experience" />
         <WatchExperience />
-        <TitleBar color='#43A6DE' text='Purchase'  name="to-purchase"/>
+        <TitleBar color='#43A6DE' text={['Purchase','खरीदें'][hindiToggle]}  name="to-purchase"/>
         <Purchase />
         <Footer />
       </Desktop>
 
       <Mobile>
-        <MLanding />
-        <TitleBar color='#cab5eb' text='Features' name="to-features"/>
+        <Language hindiToggle={hindiToggle} changeLanguageToHindi={changeLanguageToHindi} />
+        <MLanding  hindiToggle={hindiToggle} />
+        <TitleBar color='#cab5eb' text={['Features','विशेषताएं'][hindiToggle]} name="to-features"/>
         <Carousel 
                   emulateTouch 
                   showArrows={false} 
                   swipeable 
                   showStatus={false}
                   style={{height: '100vh', margin: 0,}}>
-          <FeatureMobile {...featuresMobile[0]}/>
-          <FeatureMobile {...featuresMobile[1]}/>
-          <FeatureMobile {...featuresMobile[2]}/>
-          <FeatureMobile {...featuresMobile[3]} left/>
-          <FeatureMobile {...featuresMobile[4]} left/>
+          <FeatureMobile {...featuresMobile[0]}
+                          title={featuresMobile[0].title[hindiToggle]} 
+                          description={featuresMobile[0].description[hindiToggle]}/>
+          <FeatureMobile {...featuresMobile[1]}
+                          title={featuresMobile[1].title[hindiToggle]} 
+                          description={featuresMobile[1].description[hindiToggle]}/>
+          <FeatureMobile {...featuresMobile[2]}
+                          title={featuresMobile[2].title[hindiToggle]} 
+                          description={featuresMobile[2].description[hindiToggle]}/>
+          <FeatureMobile {...featuresMobile[3]} left
+                          title={featuresMobile[3].title[hindiToggle]} 
+                          description={featuresMobile[3].description[hindiToggle]}/>
+          <FeatureMobile {...featuresMobile[4]} left
+                        title={featuresMobile[4].title[hindiToggle]} 
+                        description={featuresMobile[4].description[hindiToggle]}/>
         </Carousel>
-        <OS column={true} />
-        <ColorsMobile />
-        <TitleBar color='#FCD5F8' text='3D Experience' name="to-experience" />
+        <OS column={true} hindiToggle={hindiToggle}/>
+        <ColorsMobile hindiToggle={hindiToggle} />
+        <TitleBar color='#FCD5F8' text={['3D Experience','3D में अनुभव'][hindiToggle]} name="to-experience" />
         <WatchExperience />
-        <TitleBar color='#43A6DE' text='Purchase'  name="to-purchase"/>
+        <TitleBar color='#43A6DE' text={['Purchase','खरीदें'][hindiToggle]}  name="to-purchase"/>
         <Purchase />
         <Footer />
       </Mobile>

@@ -1,0 +1,14 @@
+#lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fccad0;
+    padding: 1% 0;
+    width: 100%;
+    font-size: 2vh;
+    font-weight: 600;
+}
+#lang * {
+    margin: 0 2%;
+    cursor: pointer;
+}
