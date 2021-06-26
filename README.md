@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+## KaWatch Front-End Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### IIIT Pune - Hackathon'21 Submission
 
-## Available Scripts
+#### TEAM: ViCode
+##### Members:
+- Shreyas Daniel `SSIPMT, Raipur, Chhattisgarh` `sem-2`
+- Mehsheed Ahmed `MIT, Manipal, Karnataka` `sem2`
 
-In the project directory, you can run:
 
-### `npm start`
+![Preview](https://github.com/shreydan/vicode_frontend_hack21/blob/main/preview.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### LINKS:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+`Hosted Site:` [Netlify](https://kawatch-hack21-frontend.netlify.app/)
 
-### `npm test`
+`Google Docs:` [Submission](https://docs.google.com/document/d/1mSyb5bxxoSUeNVLJFlUKdaouvLW6DcqMuoeFPW9TjmI/edit?usp=sharing)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`Figma Design:` [Figma-Preview](https://www.figma.com/file/TqTXMT6ztxwjGIZe1SP4j6/kawatch?node-id=0%3A1)
 
-### `npm run build`
+`Mid-Evaluation Presentation:` [ppt](https://github.com/shreydan/vicode_frontend_hack21/blob/main/KaWatch-ViCode.pdf)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Website Features:
+- Built using ReactJS
+- Hosted on Netlify with active build updates
+- Responsive mobile and desktop individual sites
+- 3D interaction with the product
+- Translation feature for entire website for english and hindi
+- subtle transitions and animations throughout the site
+- high quality images with responsive font-sizes
+- working buttons for easy navigation throughout the website
+- scroll-to-top button
+- showcase of a hypothetical product designed from scratch.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### `External Packages Used:`
 
-### `npm run eject`
+- `font-awesome` npm package for vector icons
+- `AOS` npm package for scroll reveal animations
+- `react-iframe` npm package to embed 3D view iframe
+- `react-scroll` npm package to handle scroll events
+- `react-responsive` npm package to enable media queries using react components
+- `react-responsive-carousel` npm package to add carousel on mobile site
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+More details about the packages used can be found in `package.json`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Message from the team:
 
-## Learn More
+We heartfully thank the members at E-Cell of IIIT Pune for providing us with this wonderful opportunity to think outside of the box. We had fun coming up with the website and the product itself. We learnt a lot of new technologies which improved our skills and taught us how to manage time, sharing work load and delegating the team to work on different things. With a fix 50 hour hackathon time-window, we had taken over such a huge task of finishing this website and it was an incredible feeling of accomplishment after 35 commits on GitHub.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+We also thank the members for thier continuous doubt clarification and mentorship during the mid-evaluation. We were able to add features we hadn't thought of with their suggestions. Proper timing was followed and all details were provided in time for us.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank You,
+Shreyas and Mehsheed
