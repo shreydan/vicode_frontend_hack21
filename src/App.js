@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
+import ReactDOM from 'react-dom';
 import {useMediaQuery} from 'react-responsive'
+import {Carousel} from 'react-responsive-carousel'
+import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './App.css'
 
 
@@ -162,11 +165,18 @@ const Mobile = ({children}) => {
       <Mobile>
         <MLanding />
         <TitleBar color='#cab5eb' text='Features' name="to-features"/>
-        <FeatureMobile {...featuresMobile[0]}/>
-        <FeatureMobile {...featuresMobile[1]}/>
-        <FeatureMobile {...featuresMobile[2]}/>
-        <FeatureMobile {...featuresMobile[3]} left/>
-        <FeatureMobile {...featuresMobile[4]} left/>
+        <Carousel 
+                  emulateTouch 
+                  showArrows={false} 
+                  swipeable 
+                  showStatus={false}
+                  style={{height: '100vh', margin: 0,}}>
+          <FeatureMobile {...featuresMobile[0]}/>
+          <FeatureMobile {...featuresMobile[1]}/>
+          <FeatureMobile {...featuresMobile[2]}/>
+          <FeatureMobile {...featuresMobile[3]} left/>
+          <FeatureMobile {...featuresMobile[4]} left/>
+        </Carousel>
         <OS column={true} />
         <TitleBar color='#FCD5F8' text='3D Experience' name="to-experience" />
         <WatchExperience />
