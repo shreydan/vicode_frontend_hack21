@@ -180,7 +180,7 @@ const Mobile = ({children}) => {
         <Footer />
       </Desktop>
 
-      <Mobile>
+      <Mobile className="mobile-site">
         <Language hindiToggle={hindiToggle} changeLanguageToHindi={changeLanguageToHindi} />
         <MLanding  hindiToggle={hindiToggle} />
         <TitleBar color='#cab5eb' text={['Features','विशेषताएं'][hindiToggle]} name="to-features"/>
