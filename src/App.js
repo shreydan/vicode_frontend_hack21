@@ -161,7 +161,11 @@ const Mobile = ({children}) => {
 
       <Mobile>
         <MLanding />
+        <TitleBar color='#cab5eb' text='Features' name="to-features"/>
         <FeatureMobile {...featuresMobile[0]}/>
+        <FeatureMobile {...featuresMobile[1]}/>
+        <FeatureMobile {...featuresMobile[2]}/>
+        <OS column={true} />
       </Mobile>
 
     </div>

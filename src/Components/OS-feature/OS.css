@@ -8,26 +8,27 @@
     margin: 1% 1%;
 }
 #card img {
-    width: 80%;
+    width: 40vh;
     aspect-ratio: 1;
 }
 
 #banner {
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    height: 90vh;
     width: 100%;
     background-color: #6C238E;
     color: white;
+    padding: 5% 0;
 }
 #os-title {
-    font-size: 4vw;
+    font-size: 6vh;
     font-weight: 500;
 }
 #os-text {
-    font-size: 2vw;
+    font-size: 3vh;
     text-align: center;
     margin-top: 3%;
 }

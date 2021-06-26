@@ -15,7 +15,9 @@ function Card({image, text}) {
 }
 
 
-function OS() {
+function OS({column}) {
+
+    const direction = column ? {flexDirection: 'column'} : {flexDirection: 'row'};
 
     const [cards] = useState([
         {
@@ -39,7 +41,7 @@ function OS() {
     return (
         <div id="banner">
             <div id="os-title">A dynamic OS to live for</div>
-            <div className="cards">
+            <div className="cards" style={direction}>
                 {
                     cards.map((card) => (
                         <Card {...card} />

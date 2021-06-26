@@ -6,8 +6,7 @@ function FeatureMobile(props) {
 
     const style = {
         backgroundColor: props.bg,
-        color: props.color,
-        textAlign: props.align
+        color: props.color
     }
     return (
         <div id="feature-mobile" style={style}>

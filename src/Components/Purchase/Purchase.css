@@ -15,7 +15,7 @@
 #purchase #purchase-button {
     text-decoration: none;
     padding: 1%;
-    width: 15vw;
+    width: 30vh;
     color: white;
     background-color: #5BBFF8;
     border: 3px solid white;
@@ -32,5 +32,6 @@
 }
 #purchase img {
     width: 50vw;
-    margin-bottom: -10%;
+    position: relative;
+    bottom: -20%;
 }
