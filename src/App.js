@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import {useMediaQuery} from 'react-responsive'
-
 import './App.css'
+
+
+
+// DESKTOP
 import Landing from './Components/Landing-Desktop/Landing'
 import TitleBar from './Components/TitleBar/TitleBar';
 import Feature from './Components/Features-Desktop/Feature'
@@ -9,14 +12,18 @@ import OS from './Components/OS-feature/OS'
 import Colors from './Components/Colors-Desktop/Colors'
 import WatchExperience from './Components/Watch3D/WatchExperience'
 import Purchase from './Components/Purchase/Purchase';
-
 import Footer from './Components/Footer/Footer';
-
 import feature1 from './assets/SETU.png'
 import feature2 from './assets/nfc.png'
 import feature3 from './assets/f2.png'
 import feature4 from './assets/ring.png'
 import feature5 from './assets/chakra.png'
+
+
+
+
+// MOBILE
+import MLanding from './Components/Landing-Mobile/MLanding'
 
 
 function App() {
@@ -106,7 +113,7 @@ const Mobile = ({children}) => {
       </Desktop>
 
       <Mobile>
-        
+        <MLanding />
       </Mobile>
 
     </div>
