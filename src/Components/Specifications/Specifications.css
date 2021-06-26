@@ -1,0 +1,44 @@
+#specs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fccad0;
+    padding: 7% 0;
+    background-color: black;
+    width: 100%;
+}
+
+#specifications-title {
+    font-size: 5vh;
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+.spec-data {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    font-size: 3vh;
+    margin: 2% 0;
+}
+
+#spec-title {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    justify-content: space-between;
+    border-top: 1px solid rgb(207, 165, 255);
+    border-bottom: 1px solid rgb(207, 165, 255);
+    padding: 1% 0;
+}
+#spec-list {
+    margin-top: 2%;
+    display: flex;
+    padding-left: 3%;
+    flex-direction: column;
+}
+#spec-item {
+    font-weight: normal;
+    font-size: 3vh;
+}

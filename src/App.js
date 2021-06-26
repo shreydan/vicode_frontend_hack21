@@ -33,6 +33,7 @@ import feature1_mobile from './assets/mobile/setu.png'
 import feature2_mobile from './assets/mobile/nfc.png'
 import feature3_mobile from './assets/mobile/vitals.png'
 import ColorsMobile from './Components/Colors-Mobile/ColorsMobile';
+import Specifications from './Components/Specifications/Specifications';
 
 
 function App() {
@@ -154,6 +155,7 @@ const Mobile = ({children}) => {
 
   return (
     <div className="App">
+
       <Desktop>
         <Language hindiToggle={hindiToggle} changeLanguageToHindi={changeLanguageToHindi} />
         <Landing hindiToggle={hindiToggle} />
@@ -170,6 +172,7 @@ const Mobile = ({children}) => {
         <Colors hindiToggle={hindiToggle} />
         <TitleBar color='#FCD5F8' text={['3D Experience','3D में अनुभव'][hindiToggle]} name="to-experience" />
         <WatchExperience />
+        <Specifications />
         <TitleBar color='#43A6DE' text={['Purchase','खरीदें'][hindiToggle]}  name="to-purchase"/>
         <Purchase />
         <Footer />
@@ -205,6 +208,7 @@ const Mobile = ({children}) => {
         <ColorsMobile hindiToggle={hindiToggle} />
         <TitleBar color='#FCD5F8' text={['3D Experience','3D में अनुभव'][hindiToggle]} name="to-experience" />
         <WatchExperience />
+        <Specifications />
         <TitleBar color='#43A6DE' text={['Purchase','खरीदें'][hindiToggle]}  name="to-purchase"/>
         <Purchase />
         <Footer />
