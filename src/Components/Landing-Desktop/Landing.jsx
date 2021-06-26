@@ -6,7 +6,7 @@ import landingimage from '../../assets/kawatch--watchface.png'
 
 function Landing({hindiToggle}) {
 
-    const Home = ['Home','प्रारंभ'][hindiToggle]
+    const Specifications = ['Specifications','विवरण'][hindiToggle]
     const Features = ['Features','विशेषताएं'][hindiToggle]
     const Purchase = ['Purchase','खरीदें'][hindiToggle]
     const TagLine = ['A watch that assists you to be your best everywhere.','एक घड़ी जो आपको हर दिन अपना सर्वश्रेष्ठ बनने में मदद करती है'][hindiToggle]
@@ -18,8 +18,8 @@ function Landing({hindiToggle}) {
                 <img src={logo} alt="" id="logo"/>
 
                 <div className="menu-bar">
-                    <div>{Home}</div>
                     <Link to='to-features' smooth={true}><div>{Features}</div></Link>
+                    <Link to='specs' smooth={true}><div>{Specifications}</div></Link>
                     <Link to='to-purchase' smooth={true}><div>{Purchase}</div></Link>
                 </div>
 

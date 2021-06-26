@@ -34,6 +34,7 @@ import feature2_mobile from './assets/mobile/nfc.png'
 import feature3_mobile from './assets/mobile/vitals.png'
 import ColorsMobile from './Components/Colors-Mobile/ColorsMobile';
 import Specifications from './Components/Specifications/Specifications';
+import ToTop from './Components/ToTop/ToTop';
 
 
 function App() {
@@ -157,6 +158,7 @@ const Mobile = ({children}) => {
     <div className="App">
 
       <Desktop>
+        <ToTop name='landing' />
         <Language hindiToggle={hindiToggle} changeLanguageToHindi={changeLanguageToHindi} />
         <Landing hindiToggle={hindiToggle} />
         <TitleBar color='#cab5eb' text={['Features','विशेषताएं'][hindiToggle]} name="to-features"/>
@@ -174,7 +176,7 @@ const Mobile = ({children}) => {
         <WatchExperience />
         <Specifications />
         <TitleBar color='#43A6DE' text={['Purchase','खरीदें'][hindiToggle]}  name="to-purchase"/>
-        <Purchase />
+        <Purchase  hindiToggle={hindiToggle}/>
         <Footer />
       </Desktop>
 
@@ -210,7 +212,7 @@ const Mobile = ({children}) => {
         <WatchExperience />
         <Specifications />
         <TitleBar color='#43A6DE' text={['Purchase','खरीदें'][hindiToggle]}  name="to-purchase"/>
-        <Purchase />
+        <Purchase  hindiToggle={hindiToggle}/>
         <Footer />
       </Mobile>
 
