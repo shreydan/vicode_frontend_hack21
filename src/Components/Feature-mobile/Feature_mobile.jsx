@@ -3,6 +3,7 @@ import './Feature_mobile.css'
 
 function FeatureMobile(props) {
 
+    const left = props.left ? {alignSelf: 'flex-start'} : {alignSelf: 'center'}
 
     const style = {
         backgroundColor: props.bg,
@@ -14,7 +15,7 @@ function FeatureMobile(props) {
                 <div id="feature-title-mobile">{props.title}</div>
                 <div id="feature-description-mobile">{props.description}</div>
             </div>
-            <img src={props.image} alt={props.title} />
+            <img src={props.image} alt={props.title} style={left} />
             
         </div>
     )

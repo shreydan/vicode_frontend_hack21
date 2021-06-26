@@ -111,22 +111,22 @@ function App() {
       color: 'black',
       bg: '#62FF8E'
     },
-    // {
-    //   id: 4,
-    //   title: 'Hi-Tech precision with advanced sensors',
-    //   description: 'This is the first watch ever to measure temperature using IR and an oximeter to accurately measure your vitals round the clock.',
-    //   image: feature4,
-    //   color: 'white',
-    //   bg: '#0F0F0F'
-    // },
-    // {
-    //   id: 5,
-    //   title: 'Digital Chakra to interact effortlessly',
-    //   description: 'Kawatch emulates the mechanics of a real time-piece digitally to make new users feel home.',
-    //   image: feature5,
-    //   color: 'white',
-    //   bg: '#EE6E26'
-    // },
+    {
+      id: 4,
+      title: 'Hi-Tech precision with advanced sensors',
+      description: 'This is the first watch ever to measure temperature using IR and an oximeter to accurately measure your vitals round the clock.',
+      image: feature4,
+      color: 'white',
+      bg: '#0F0F0F'
+    },
+    {
+      id: 5,
+      title: 'Digital Chakra to interact effortlessly',
+      description: 'Kawatch emulates the mechanics of a real time-piece digitally to make new users feel home.',
+      image: feature5,
+      color: 'white',
+      bg: '#EE6E26'
+    },
   ])
   
 const Desktop = ({children}) => {
@@ -142,21 +142,21 @@ const Mobile = ({children}) => {
 
   return (
     <div className="App">
-        <Desktop>
-          <Landing />
-          <TitleBar color='#cab5eb' text='Features' name="to-features"/>
-          {
-            features.map((feature) => (
-              <Feature {...feature} key={feature.id} />
-            ))
-          }
-          <OS />
-          <Colors />
-          <TitleBar color='#FCD5F8' text='3D Experience' name="to-experience" />
-          <WatchExperience />
-          <TitleBar color='#43A6DE' text='Purchase'  name="to-purchase"/>
-          <Purchase />
-          <Footer />
+      <Desktop>
+        <Landing />
+        <TitleBar color='#cab5eb' text='Features' name="to-features"/>
+        {
+          features.map((feature) => (
+            <Feature {...feature} key={feature.id} />
+          ))
+        }
+        <OS />
+        <Colors />
+        <TitleBar color='#FCD5F8' text='3D Experience' name="to-experience" />
+        <WatchExperience />
+        <TitleBar color='#43A6DE' text='Purchase'  name="to-purchase"/>
+        <Purchase />
+        <Footer />
       </Desktop>
 
       <Mobile>
@@ -165,7 +165,14 @@ const Mobile = ({children}) => {
         <FeatureMobile {...featuresMobile[0]}/>
         <FeatureMobile {...featuresMobile[1]}/>
         <FeatureMobile {...featuresMobile[2]}/>
+        <FeatureMobile {...featuresMobile[3]} left/>
+        <FeatureMobile {...featuresMobile[4]} left/>
         <OS column={true} />
+        <TitleBar color='#FCD5F8' text='3D Experience' name="to-experience" />
+        <WatchExperience />
+        <TitleBar color='#43A6DE' text='Purchase'  name="to-purchase"/>
+        <Purchase />
+        <Footer />
       </Mobile>
 
     </div>

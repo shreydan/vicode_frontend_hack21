@@ -5,7 +5,7 @@
     background-color: black;
     padding: 1%;
     color: white;
-    font-size: 2vw;
+    font-size: 3vh;
     font-weight: 600;
 }
 #footer * {
@@ -13,6 +13,12 @@
     cursor: pointer;
     color: white;
 }
+#footer #company-name {
+    flex: 15;
+    text-align: end;
+}
 .icons {
     display: flex;
+    flex: 1;
+    justify-content: space-between;
 }
